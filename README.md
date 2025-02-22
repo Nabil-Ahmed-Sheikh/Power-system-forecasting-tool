@@ -1,22 +1,81 @@
-Traditional software for power system planning perform power flow analysis using user-defined generation dispatches and
-demands. However, these software lack the capability to forecast generation and demand and optimize power flow while
-respecting transmission system constraints within the same tool. Many jurisdictions around the world are seeking tools with these
-integrated robust capabilities to plan the transmission system more efficiently and optimally. The objective of this project is to
-develop a software tool that forecasts generation and demand and optimizes power flow to minimize total system production cost
-while respecting transmission system constraints.
+# Power System Forecasting and Optimization Tool
 
-The outcome or end-product of this project will be an integrated software tool that can forecast generation and system demand
-and perform security-constrained optimal power flow (SCOPF) for a power system model.
-For the forecasting portion, generation dispatch of renewable generators, such as wind and solar generation, and system demand
-will be forecasted using Python. The project will consider different machine learning techniques such as random forest, gradient
-boosting, neural network, etc. and will pick the algorithm that has the lowest forecast error.
-For the security-constrained optimal power flow (SCOPF) portion, an optimization model will be developed using Python and
-Gurobi optimizer. The objective of this optimization will be to minimize total system production cost, and the model will be
-subject to constraints, such as DC power flow equation constraints and line thermal rating constraints. The forecasting algorithm
-will be integrated with the optimization tool so that the optimization model can directly use the forecasted renewable generation
-and system demand data while solving the model.
-The optimization tool will provide a dynamic method for identifying transmission system deficiencies by indicating the limiting
-transmission lines causing congestion in the power system. Furthermore, the tool will generate a quantitative summary of the cost
-impacts due to congestion so that the transmission system can be planned economically. A single-line diagram of the model will
-be prepared using commercially or publicly available tools to visualize the results from the developed forecasting and optimization
-tool.
+## Overview
+
+Traditional power system planning software primarily focuses on power flow analysis based on user-defined generation dispatches and demands. However, these tools often lack the ability to forecast generation and demand while simultaneously optimizing power flow under transmission system constraints.
+
+This project aims to develop an integrated software solution that:
+- **Forecasts generation and demand**
+- **Optimizes power flow** to minimize the total system production cost
+- **Respects transmission system constraints** for efficient and reliable planning
+
+This innovative tool addresses the growing need for robust, integrated solutions across jurisdictions worldwide, enabling more efficient and optimal transmission system planning.
+
+## Project Objectives
+
+The primary goal of this project is to create a comprehensive software tool capable of:
+- Forecasting **renewable generation dispatch** (e.g., wind and solar) and **system demand** using advanced machine learning techniques.
+- Performing **Security-Constrained Optimal Power Flow (SCOPF)** to minimize total production costs while adhering to system constraints.
+
+### Forecasting Methodology
+- Developed using **Python**
+- Utilizes machine learning algorithms such as:
+  - Random Forest
+  - Gradient Boosting
+  - Neural Networks
+- The model selection will be based on achieving the **lowest forecast error**.
+
+### Optimization Model
+- Built using **Python** and the **Gurobi Optimizer**
+- Objective: Minimize total system production cost
+- Constraints:
+  - DC power flow equations
+  - Line thermal rating constraints
+- Integration with forecasting results to dynamically incorporate predicted renewable generation and demand data
+
+### Key Features
+- **Transmission system deficiency detection** by identifying limiting transmission lines causing congestion
+- **Economic impact analysis** of congestion on system costs
+- **Visual representation** through a single-line diagram, created using commercially or publicly available tools
+
+---
+
+## Installation Guide (For Team Members)
+
+**Prerequisite:** Ensure you have **Anaconda** or **Miniconda** installed.
+
+1. **Create a new environment:**
+   ```bash
+   conda create -n <env_name> python=3.9
+   ```
+2. **Activate the environment:**
+   ```bash
+   conda activate <env_name>
+   ```
+3. **Install required packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## Contribution Guidelines
+
+### Pull Request Instructions
+- Push updates to your feature branch.
+- If you install a new package, update the `requirements.txt`:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+- Push the updated `requirements.txt` to ensure team consistency.
+
+---
+
+## License
+This project is for educational and research purposes.
+
+---
+
+## Contact
+For questions or contributions, please contact the project maintainer.
+
