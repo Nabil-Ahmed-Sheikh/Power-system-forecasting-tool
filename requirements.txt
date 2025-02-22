@@ -1,18 +1,5 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: win-64
-ca-certificates=2024.12.31=haa95532_0
-joblib=1.4.2=pypi_0
-numpy=2.0.2=pypi_0
-openssl=3.0.15=h827c3e9_0
-pip=25.0=py39haa95532_0
-python=3.9.21=h8205438_1
-scikit-learn=1.6.1=pypi_0
-scipy=1.13.1=pypi_0
-setuptools=75.8.0=py39haa95532_0
-sqlite=3.45.3=h2bbff1b_0
-threadpoolctl=3.5.0=pypi_0
-tzdata=2025a=h04d1e81_0
-vc=14.42=haa95532_4
-vs2015_runtime=14.42.34433=he0abc0d_4
-wheel=0.45.1=py39haa95532_0
+joblib==1.4.2
+numpy==2.0.2
+scikit-learn==1.6.1
+scipy==1.13.1
+threadpoolctl==3.5.0
