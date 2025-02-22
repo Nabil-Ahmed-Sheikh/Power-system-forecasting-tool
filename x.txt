@@ -1,0 +1,3 @@
+oldest historical data (CSD)
+south or central Alberta (ie Medicine Hat, Brooks, Hanna, Vauxhall)
+wind, solar and demand (sync prediction)
